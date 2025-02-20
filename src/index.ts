@@ -3,7 +3,6 @@ import cors from "cors"
 import "dotenv/config"
 
 const app = express()
-const port = 3033
 
 app.use(cors())
 app.get('/', (req:Request, res:Response) => {
@@ -16,6 +15,6 @@ app.get('/', (req:Request, res:Response) => {
   res.json(basicInfo)
 })
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`)
+app.listen(3033, () => {
+  console.log(`Server started.`)
 })
