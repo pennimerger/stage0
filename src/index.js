@@ -2,7 +2,6 @@ import express from 'express';
 import cors from "cors";
 import "dotenv/config";
 const app = express();
-const port = 3033;
 app.use(cors());
 app.get('/', (req, res) => {
     const currentDatetime = new Date();
@@ -13,7 +12,6 @@ app.get('/', (req, res) => {
     };
     res.json(basicInfo);
 });
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+app.listen(3033, () => {
+    console.log(`Server started.`);
 });
-console.log(1 + 1);
