@@ -43,10 +43,6 @@ GITHUB=YOUR_GITHUB_PROFILE
 npm start
 ```
 
-## Note
-
-Double indices file because typescript compiles directly to /src hence no need for the /dist folder where the index.js would have been.
-
 ## More Info
 
 For full endpoint documentation and to reach out to more nodeJs developers in HNG, please check:
